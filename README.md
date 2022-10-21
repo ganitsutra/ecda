@@ -5,6 +5,7 @@ Before you compile, you need to download following dependencies:
 There files can be downloaded from https://github.com/suneel-sarswat/cda. Please see this link for more details. You also need to compile these files before you compile the files for this project. Make sure all the files (including files for this project) are in the same folder.
 2. Equation Module:
 We have used Coq's Equations Module, which is convinient way to write structural recursive functions in Coq. See https://github.com/mattam82/Coq-Equations for more details and installation options. You can install this module using following simple steps:
+
  a. Run 'opam repo add coq-released https://coq.inria.fr/opam/released'
  
  b. Run 'opam install coq-equations'
