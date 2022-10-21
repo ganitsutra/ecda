@@ -6,12 +6,13 @@ There files can be downloaded from https://github.com/suneel-sarswat/cda. Please
 2. Equation Module:
 We have used Coq's Equations Module, which is convinient way to write structural recursive functions in Coq. See https://github.com/mattam82/Coq-Equations for more details and installation options. You can install this module using following simple steps:
  a. Run 'opam repo add coq-released https://coq.inria.fr/opam/released'
+ 
  b. Run 'opam install coq-equations'
 
 
 The file 'ecda.sh' contains all the command to compile the program; run the command 'sh ecda.sh' on the terminal to compile the files.
 
-The main formalization is divided in the following six files.
+The main formalization is divided in the following three files.
 
 0. NSS2021_lib.v, Definitions.v, Properties.v, MaxMatch.v, UniqueMatch.v, Programs.v : contains a publically available library from an earlier on which this project is built up. You need all these files, as stated above, to run current project. 
 
