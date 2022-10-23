@@ -1,11 +1,11 @@
 #!/bin/bash
 
-printf "\n**********First compiling libraries from the earlier work********** ...\n\n"
+printf "\n**********First compiling libraries from the earlier works********** ...\n\n"
 printf "\nCompiling basic list libraries...\n\n"
 
 coqc NSS2021_lib.v
 
-printf "Compiling definitions and their lemmas...\n\n"
+printf "Compiling definitions and lemmas...\n\n"
 
 coqc Definitions.v
 
@@ -20,8 +20,8 @@ coqc UniqueMatch.v
 printf "Compiling algorithm and its correctness...\n\n"
 coqc Programs.v
 
-printf "Completed compiling all the files associated with earlier work.\n\n"
-printf "\n**********Now compiling efficient formalization ********** ...\n\n"
+printf "Completed compiling all the files associated with the earlier works.\n\n"
+printf "\n**********Now compiling our efficient formalization ********** ...\n\n"
 coqc RBT.v
 coqc OTypes.v
 coqc Efficient.v
