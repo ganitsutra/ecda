@@ -4,14 +4,16 @@ This is the coq formalization accompanying our paper.
 To compile our Coq code, you need to have a Coq compiler. We have tested our code using Coq version 8.12.2, and it compiles successfully without errors.
 
 Furthermore, before you can compile, you need to download and install the Coq's Equations Module.
-See https://github.com/mattam82/Coq-Equations for more details and installation options. You can install this module using the following two commands in your terminal:
+See https://github.com/mattam82/Coq-Equations for more details and installation options. You can install this module using the following two commands in your terminal.
 
-opam repo add coq-released https://coq.inria.fr/opam/released
+    opam repo add coq-released https://coq.inria.fr/opam/released
 
-opam install coq-equations
+    opam install coq-equations
 
-Finally, you can compile our Coq formalization using the following command in your shell.
+Finally, you can compile our Coq formalization using the following command in your terminal.
+
     sh run.sh
+    
 This command will compile our Coq formalization and also extract two programs in the `../application/' folder (corresponding to the earlier List implementation and our new Red-black tree implementation).
 
 Our new formalization consists of three main files, which we briefly describe below.
