@@ -2913,7 +2913,7 @@ Extract Constant Compare_dec.lt_eq_lt_dec =>
 Extraction Language OCaml.
 Require ExtrOcamlBasic.
 
-Extraction "../application/process_with_tree.ml" cform ploop.
+Extraction "../application/Extracted_tree.ml" eProcess_instruction.
 
 (* Examples of Bids and Asks trees
 
