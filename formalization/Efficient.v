@@ -2316,8 +2316,6 @@ refine (let BAM := (ploop P I') in (P (Bt BAM) (At BAM) i (Bt_id BAM) (At_id BAM
 Definition ploop2 (I:list instruction):(TB.t)*(TA.t)*(T_id.t)*(T_id.t)*(list transaction) := fold_left (fun (accprod: _ * _ * _ * _ * _) tau => let (t_4, _) := accprod in let (t_3, ta_id) := t_4 in let (t_2, tb_id) := t_3 in let (tb, ta) := t_2 in  eProcess_instruction tb ta tau tb_id ta_id) I (TB.empty, TA.empty, T_id.empty, T_id.empty, nil).
 
 
-Extraction ploop2.
-
 Theorem efficient_correct_OK (A B: list order)(tB: TB.t)(tA: TA.t)(tau: instruction)(tB_id tA_id : T_id.t):
 T_id.Ok tA_id -> T_id.Ok tB_id -> TB.Ok tB -> TA.Ok tA ->
 let eBAM := eProcess_instruction tB tA tau tB_id tA_id in 
